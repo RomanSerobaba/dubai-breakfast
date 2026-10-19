@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-navy-dark: #0A192F;
+    --color-navy-deep: #0D213F;
+    --color-navy-surface: #142C52;
+    --color-cream: #F8F6F0;
+    --color-cream-soft: #F1ECE1;
+    --color-cream-card: #FFFFFF;
+    --color-accent: #E06D2B; /* Contrast button color: high-end warm terracotta copper */
+    --color-accent-hover: #C65A1B;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #F8F6F0;
+    color: #0A192F;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* =========================================================================
+   ANIMATED VERTICAL GRID LINES (Inspired by rkaccounting.co.uk)
+   Three semi-transparent vertical lines (25%, 50%, 75%) with smooth
+   descending light pulses running across all light-themed sections.
+   ========================================================================= */
+
+.animated-grid-lines {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.animated-grid-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: rgba(10, 25, 47, 0.08); /* architectural light guide line */
+}
+
+.animated-grid-line-1 {
+  left: 25%;
+}
+
+.animated-grid-line-2 {
+  left: 50%;
+}
+
+.animated-grid-line-3 {
+  left: 75%;
+}
+
+/* Subtle continuous shimmering breathing on the vertical guides */
+.animated-grid-line::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(224, 109, 43, 0.04) 0%,
+    rgba(10, 25, 47, 0.08) 50%,
+    rgba(224, 109, 43, 0.04) 100%
+  );
+  animation: lineShimmerPulse 4.5s ease-in-out infinite alternate;
+}
+
+/* Descending pulsing beam head (like rkaccounting mo-drop) */
+.animated-grid-drop {
+  position: absolute;
+  left: -0.5px;
+  width: 2px;
+  height: 160px;
+  border-radius: 9999px;
+  background: linear-gradient(
+    to bottom,
+    rgba(224, 109, 43, 0) 0%,
+    rgba(148, 163, 184, 0.3) 30%,
+    rgba(224, 109, 43, 0.85) 75%,
+    rgba(255, 255, 255, 1) 95%,
+    rgba(224, 109, 43, 0) 100%
+  );
+  box-shadow: 0 0 10px 1px rgba(224, 109, 43, 0.45);
+  will-change: top, opacity;
+  animation-timing-function: cubic-bezier(0.4, 0.26, 0.16, 0.98);
+  animation-iteration-count: infinite;
+}
+
+.drop-1 {
+  animation-name: lineDropKeyframe;
+  animation-duration: 6.8s;
+  animation-delay: 1.8s;
+}
+
+.drop-2 {
+  animation-name: lineDropKeyframe;
+  animation-duration: 5.6s;
+  animation-delay: 0s;
+}
+
+.drop-3 {
+  animation-name: lineDropKeyframe;
+  animation-duration: 7.4s;
+  animation-delay: 2.4s;
+}
+
+@keyframes lineDropKeyframe {
+  0% {
+    top: -180px;
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  88% {
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes lineShimmerPulse {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.95;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+

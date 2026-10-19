@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" width="100%" height="100%">
+  <defs>
+    <linearGradient id="diagBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#081424" />
+      <stop offset="50%" stop-color="#0D2038" />
+      <stop offset="100%" stop-color="#06101D" />
+    </linearGradient>
+
+    <linearGradient id="orangeBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E06D2B" />
+      <stop offset="100%" stop-color="#FF9B54" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#142B4B" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0B1A2F" stop-opacity="0.95" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="650" fill="url(#diagBg)" rx="20" />
+
+  <!-- Blueprint Grid -->
+  <g stroke="#ffffff" stroke-width="0.5" opacity="0.06">
+    <line x1="0" y1="130" x2="1200" y2="130" />
+    <line x1="0" y1="260" x2="1200" y2="260" />
+    <line x1="0" y1="390" x2="1200" y2="390" />
+    <line x1="0" y1="520" x2="1200" y2="520" />
+    <line x1="300" y1="0" x2="300" y2="650" />
+    <line x1="600" y1="0" x2="600" y2="650" />
+    <line x1="900" y1="0" x2="900" y2="650" />
+  </g>
+
+  <!-- Top Title Bar -->
+  <g transform="translate(60, 50)">
+    <rect width="400" height="42" rx="10" fill="#E06D2B" fill-opacity="0.12" stroke="#E06D2B" stroke-width="1" />
+    <circle cx="24" cy="21" r="5" fill="#E06D2B" />
+    <text x="40" y="26" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#FF9B54" letter-spacing="1">СТРАТЕГИЧЕСКИЙ РАЗБОР · МЕТОДОЛОГИЯ</text>
+  </g>
+
+  <!-- 3 Steps Diagnostic Workflow Cards -->
+  <!-- Step 1: Аудит узких мест -->
+  <g transform="translate(60, 130)">
+    <rect width="320" height="440" rx="16" fill="url(#cardGrad)" stroke="#1E3A5F" stroke-width="1.5" />
+    <circle cx="45" cy="45" r="20" fill="#E06D2B" fill-opacity="0.2" stroke="#E06D2B" stroke-width="1.5" />
+    <text x="45" y="52" font-family="system-ui, sans-serif" font-size="16" font-weight="800" fill="#E06D2B" text-anchor="middle">01</text>
+    
+    <text x="80" y="42" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">Диагностика воронки</text>
+    <text x="80" y="60" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#94A3B8">Где теряются миллионы</text>
+
+    <!-- Content points -->
+    <rect x="25" y="100" width="270" height="60" rx="8" fill="#0A1728" stroke="#1E3A5F" stroke-width="1" />
+    <text x="40" y="125" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#F8FAFC">Анализ качества лидов</text>
+    <text x="40" y="145" font-family="system-ui, sans-serif" font-size="11" font-weight="400" fill="#64748B">Отсекаем нецелевых до встречи</text>
+
+    <rect x="25" y="180" width="270" height="60" rx="8" fill="#0A1728" stroke="#1E3A5F" stroke-width="1" />
+    <text x="40" y="205" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#F8FAFC">Разбор оффера и позиционирования</text>
+    <text x="40" y="225" font-family="system-ui, sans-serif" font-size="11" font-weight="400" fill="#64748B">Почему клиент думает и уходит</text>
+
+    <rect x="25" y="260" width="270" height="60" rx="8" fill="#0A1728" stroke="#1E3A5F" stroke-width="1" />
+    <text x="40" y="285" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#F8FAFC">Оценка цикла переговоров</text>
+    <text x="40" y="305" font-family="system-ui, sans-serif" font-size="11" font-weight="400" fill="#64748B">Сокращение 90 дней → 35 дней</text>
+
+    <!-- Result Pill -->
+    <rect x="25" y="360" width="270" height="50" rx="10" fill="#E06D2B" fill-opacity="0.1" stroke="#E06D2B" stroke-width="1" />
+    <text x="160" y="390" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#FF9B54" text-anchor="middle">Результат: ясность ограничений</text>
+  </g>
+
+  <!-- Step 2: Архитектура решений -->
+  <g transform="translate(440, 130)">
+    <rect width="320" height="440" rx="16" fill="url(#cardGrad)" stroke="#E06D2B" stroke-width="2" />
+    <circle cx="45" cy="45" r="20" fill="#E06D2B" />
+    <text x="45" y="52" font-family="system-ui, sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">02</text>
+    
+    <text x="80" y="42" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">Сборка решений</text>
+    <text x="80" y="60" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#E06D2B">Совместно за столом</text>
+
+    <rect x="25" y="100" width="270" height="60" rx="8" fill="#0A1728" stroke="#1E3A5F" stroke-width="1" />
+    <text x="40" y="125" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#F8FAFC">Упаковка High-Ticket оффера</text>
+    <text x="40" y="145" font-family="system-ui, sans-serif" font-size="11" font-weight="400" fill="#64748B">Формулировка безусловной ценности</text>
+
+    <rect x="25" y="180" width="270" height="60" rx="8" fill="#0A1728" stroke="#1E3A5F" stroke-width="1" />
+    <text x="40" y="205" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#F8FAFC">Инструменты прогрева ЛПР</text>
+    <text x="40" y="225" font-family="system-ui, sans-serif" font-size="11" font-weight="400" fill="#64748B">Смысловые касания до диалога</text>
+
+    <rect x="25" y="260" width="270" height="60" rx="8" fill="#0A1728" stroke="#1E3A5F" stroke-width="1" />
+    <text x="40" y="285" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#F8FAFC">Обратная связь от 20 предпринимателей</text>
+    <text x="40" y="305" font-family="system-ui, sans-serif" font-size="11" font-weight="400" fill="#64748B">Опыт реальных сделок в ОАЭ и мире</text>
+
+    <rect x="25" y="360" width="270" height="50" rx="10" fill="#E06D2B" fill-opacity="0.15" stroke="#E06D2B" stroke-width="1" />
+    <text x="160" y="390" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">Результат: готовая модель</text>
+  </g>
+
+  <!-- Step 3: Внедрение и рост чека -->
+  <g transform="translate(820, 130)">
+    <rect width="320" height="440" rx="16" fill="url(#cardGrad)" stroke="#1E3A5F" stroke-width="1.5" />
+    <circle cx="45" cy="45" r="20" fill="#10B981" fill-opacity="0.2" stroke="#10B981" stroke-width="1.5" />
+    <text x="45" y="52" font-family="system-ui, sans-serif" font-size="16" font-weight="800" fill="#34D399" text-anchor="middle">03</text>
+    
+    <text x="80" y="42" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">План внедрения</text>
+    <text x="80" y="60" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#34D399">Пошаговый Roadmap</text>
+
+    <!-- Key Metrics Highlight -->
+    <rect x="25" y="100" width="270" height="110" rx="12" fill="#061220" stroke="#10B981" stroke-width="1" stroke-opacity="0.4" />
+    <text x="40" y="130" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#94A3B8" letter-spacing="1">СРЕДНИЙ РОСТ КОНВЕРСИИ</text>
+    <text x="40" y="172" font-family="system-ui, sans-serif" font-size="34" font-weight="900" fill="#34D399">+115%</text>
+    <text x="175" y="170" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#F8FAFC">в закрытие сделок</text>
+
+    <rect x="25" y="230" width="270" height="100" rx="12" fill="#061220" stroke="#E06D2B" stroke-width="1" stroke-opacity="0.4" />
+    <text x="40" y="260" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#94A3B8" letter-spacing="1">КРУПНЕЙШАЯ СДЕЛКА КЕЙСА</text>
+    <text x="40" y="302" font-family="system-ui, sans-serif" font-size="32" font-weight="900" fill="#FF9B54">$250,000</text>
+    <text x="210" y="300" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#F8FAFC">контракт</text>
+
+    <rect x="25" y="360" width="270" height="50" rx="10" fill="#10B981" fill-opacity="0.1" stroke="#10B981" stroke-width="1" />
+    <text x="160" y="390" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#34D399" text-anchor="middle">Результат: масштабирование</text>
+  </g>
+</svg>

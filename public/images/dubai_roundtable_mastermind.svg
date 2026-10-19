@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hallGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#081426" />
+      <stop offset="40%" stop-color="#0F243E" />
+      <stop offset="70%" stop-color="#1B3B60" />
+      <stop offset="100%" stop-color="#071220" />
+    </linearGradient>
+
+    <radialGradient id="tableGlow" cx="50%" cy="65%" r="45%">
+      <stop offset="0%" stop-color="#E06D2B" stop-opacity="0.25" />
+      <stop offset="40%" stop-color="#D4AF37" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="marbleTable" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#182C48" />
+      <stop offset="30%" stop-color="#243F64" />
+      <stop offset="70%" stop-color="#14263F" />
+      <stop offset="100%" stop-color="#0A182B" />
+    </linearGradient>
+  </defs>
+
+  <!-- Venue Background -->
+  <rect width="1200" height="800" fill="url(#hallGrad)" rx="20" />
+  <rect width="1200" height="800" fill="url(#tableGlow)" rx="20" />
+
+  <!-- Floor-to-ceiling panoramic glass windows with Dubai skyline -->
+  <g stroke="#1E3A5F" stroke-width="2" opacity="0.35">
+    <line x1="200" y1="50" x2="200" y2="450" />
+    <line x1="400" y1="50" x2="400" y2="450" />
+    <line x1="600" y1="50" x2="600" y2="450" />
+    <line x1="800" y1="50" x2="800" y2="450" />
+    <line x1="1000" y1="50" x2="1000" y2="450" />
+    <line x1="100" y1="450" x2="1100" y2="450" stroke-width="3" />
+  </g>
+
+  <!-- Distant Burj Khalifa & DIFC Tower through window -->
+  <g fill="#0B1A30" opacity="0.7">
+    <polygon points="590,160 610,160 615,450 585,450" />
+    <line x1="600" y1="80" x2="600" y2="160" stroke="#FFE3A8" stroke-width="2" opacity="0.8" />
+    <rect x="360" y="240" width="65" height="210" />
+    <polygon points="360,240 392,190 425,240" />
+    <rect x="770" y="220" width="75" height="230" />
+    <polygon points="770,220 807,170 845,220" />
+    <circle cx="600" cy="80" r="3" fill="#FFE3A8" />
+  </g>
+
+  <!-- Warm Morning Sunrise Glow through window -->
+  <ellipse cx="600" cy="380" rx="350" ry="70" fill="#E06D2B" opacity="0.25" filter="blur(20px)" />
+
+  <!-- Executive Round Mastermind Table -->
+  <ellipse cx="600" cy="620" rx="460" ry="160" fill="url(#marbleTable)" stroke="#E06D2B" stroke-width="2" stroke-opacity="0.4" />
+  
+  <!-- Polished Table Centerpiece -->
+  <ellipse cx="600" cy="610" rx="200" ry="60" fill="#0A182B" stroke="#1E3A5F" stroke-width="1.5" />
+  
+  <!-- Flower arrangement / centerpiece -->
+  <circle cx="600" cy="590" r="16" fill="#E06D2B" opacity="0.7" />
+  <circle cx="585" cy="595" r="12" fill="#D4AF37" opacity="0.6" />
+  <circle cx="615" cy="595" r="12" fill="#FFE0A0" opacity="0.5" />
+
+  <!-- Table Place Settings (20 guests seating representation) -->
+  <!-- Left Side Guests -->
+  <g fill="#E2DDD3" opacity="0.75">
+    <!-- Seat 1 -->
+    <rect x="220" y="550" width="36" height="24" rx="4" fill="#0E223F" stroke="#E06D2B" stroke-width="1" />
+    <circle cx="210" cy="540" r="6" fill="#D4AF37" />
+    <rect x="230" y="555" width="20" height="3" fill="#ffffff" opacity="0.5" />
+
+    <!-- Seat 2 -->
+    <rect x="290" y="610" width="40" height="26" rx="4" fill="#0E223F" stroke="#E06D2B" stroke-width="1" />
+    <circle cx="280" cy="600" r="6" fill="#D4AF37" />
+    <rect x="300" y="616" width="22" height="3" fill="#ffffff" opacity="0.5" />
+
+    <!-- Seat 3 -->
+    <rect x="390" y="660" width="42" height="28" rx="4" fill="#0E223F" stroke="#E06D2B" stroke-width="1" />
+    <circle cx="380" cy="650" r="7" fill="#D4AF37" />
+    <rect x="402" y="668" width="24" height="3" fill="#ffffff" opacity="0.5" />
+
+    <!-- Seat 4 (Center Front) -->
+    <rect x="520" y="685" width="46" height="30" rx="4" fill="#0E223F" stroke="#E06D2B" stroke-width="1.5" />
+    <circle cx="505" cy="675" r="7" fill="#D4AF37" />
+    <rect x="532" y="694" width="26" height="3" fill="#ffffff" opacity="0.6" />
+
+    <!-- Seat 5 (Center Front) -->
+    <rect x="634" y="685" width="46" height="30" rx="4" fill="#0E223F" stroke="#E06D2B" stroke-width="1.5" />
+    <circle cx="695" cy="675" r="7" fill="#D4AF37" />
+    <rect x="646" y="694" width="26" height="3" fill="#ffffff" opacity="0.6" />
+
+    <!-- Seat 6 -->
+    <rect x="768" y="660" width="42" height="28" rx="4" fill="#0E223F" stroke="#E06D2B" stroke-width="1" />
+    <circle cx="820" cy="650" r="7" fill="#D4AF37" />
+    <rect x="778" y="668" width="24" height="3" fill="#ffffff" opacity="0.5" />
+
+    <!-- Seat 7 -->
+    <rect x="870" y="610" width="40" height="26" rx="4" fill="#0E223F" stroke="#E06D2B" stroke-width="1" />
+    <circle cx="920" cy="600" r="6" fill="#D4AF37" />
+    <rect x="880" y="616" width="22" height="3" fill="#ffffff" opacity="0.5" />
+
+    <!-- Seat 8 -->
+    <rect x="944" y="550" width="36" height="24" rx="4" fill="#0E223F" stroke="#E06D2B" stroke-width="1" />
+    <circle cx="990" cy="540" r="6" fill="#D4AF37" />
+  </g>
+
+  <!-- Top Curved Attendees (Silhouettes around the table) -->
+  <g fill="#0D1E35" stroke="#1E3A5F" stroke-width="1">
+    <circle cx="340" cy="490" r="22" />
+    <circle cx="440" cy="460" r="22" />
+    <circle cx="550" cy="445" r="22" />
+    <!-- Facilitator / Alina Lisina Seat -->
+    <circle cx="650" cy="445" r="24" fill="#142C4E" stroke="#E06D2B" stroke-width="2" />
+    <circle cx="760" cy="460" r="22" />
+    <circle cx="860" cy="490" r="22" />
+  </g>
+
+  <!-- Overlay Header Badge -->
+  <g transform="translate(60, 60)">
+    <rect width="360" height="64" rx="14" fill="#0A192F" fill-opacity="0.9" stroke="#1E3A5F" stroke-width="1.5" />
+    <circle cx="34" cy="32" r="10" fill="#E06D2B" />
+    <text x="56" y="27" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">Круглый стол в Дубае</text>
+    <text x="56" y="47" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#94A3B8">20 участников · Downtown Dubai · 10:00–13:00</text>
+  </g>
+</svg>
