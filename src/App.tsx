@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { Header } from './components/Header.tsx';
 import { Hero } from './components/Hero.tsx';
-import { GuidingSection } from './components/GuidingSection.tsx';
 import { HostSection } from './components/HostSection.tsx';
 import { ProblemSection } from './components/ProblemSection.tsx';
+import { SystemElementsSection } from './components/SystemElementsSection.tsx';
 import { BreakdownSection } from './components/BreakdownSection.tsx';
+import { ParticipantsVideoSection } from './components/ParticipantsVideoSection.tsx';
 import { AudienceSection } from './components/AudienceSection.tsx';
 import { ProgramAndOutcomes } from './components/ProgramAndOutcomes.tsx';
 import { PricingSection } from './components/PricingSection.tsx';
@@ -12,6 +13,7 @@ import { FinalCtaSection } from './components/FinalCtaSection.tsx';
 import { FaqSection } from './components/FaqSection.tsx';
 import { ApplicationFormSection } from './components/ApplicationFormSection.tsx';
 import { Footer } from './components/Footer.tsx';
+import { AnimatedGridLines } from './components/AnimatedGridLines.tsx';
 
 export default function App() {
   const [selectedPackageId, setSelectedPackageId] = useState<string>('participant_single');
@@ -34,7 +36,8 @@ export default function App() {
   };
 
   return (
-    <div className="w-full min-h-screen bg-[#0A192F] text-[#0A192F] selection:bg-[#E06D2B] selection:text-white font-sans overflow-x-hidden">
+    <div className="w-full min-h-screen bg-[#0A192F] text-[#0A192F] selection:bg-[#E06D2B] selection:text-white overflow-x-hidden relative">
+      <AnimatedGridLines />
       
       {/* 0. Floating Pill Top Navigation */}
       <Header onApplyClick={() => scrollToApplication()} />
@@ -47,19 +50,22 @@ export default function App() {
           onApplyBreakdown={() => scrollToApplication('breakdown_single')}
         />
 
-        {/* Блок 1: Что за встреча, кому подходит и какую задачу помогает решить (Full-width background, menu-width content) */}
-        <GuidingSection />
-
-        {/* Блок 2: Кто проводит: Алина Лисина, Blue White и доказательство экспертизы + хабы (Full-width background, menu-width content) */}
-        <HostSection />
-
-        {/* Блок 3: Три главные проблемы аудитории и содержание работы (Full-width background, menu-width content) */}
+        {/* Блок 1: Три главные проблемы аудитории и содержание работы (Full-width background, menu-width content) */}
         <ProblemSection onLearnMoreClick={scrollToPricing} />
 
-        {/* Блок 4: Как проходит персональный разбор (Full-width background, menu-width content) */}
+        {/* Блок 2: От отдельных заявок — к системе продаж с высоким чеком */}
+        <SystemElementsSection />
+
+        {/* Блок: Как проходит персональный разбор */}
         <BreakdownSection
           onApplyBreakdown={() => scrollToApplication('breakdown_single')}
         />
+
+        {/* Блок: За одним столом — люди, принимающие решения */}
+        <ParticipantsVideoSection />
+
+        {/* Блок 3: Кто проводит: Алина Лисина, Blue White и доказательство экспертизы (Full-width background, menu-width content) */}
+        <HostSection />
 
         {/* Блок 5: Кто участвует и как работает отбор (Full-width background, menu-width content) */}
         <AudienceSection />

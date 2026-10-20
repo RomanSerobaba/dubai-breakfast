@@ -34,9 +34,9 @@ export const HostSection: React.FC = () => {
         </div>
 
         {/* 2-Column Split Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           
-          {/* Left Column: Portrait & Video Placeholders */}
+          {/* Left Column: Portrait */}
           <div className="lg:col-span-5 space-y-6">
             
             {/* Main Portrait Placeholder */}
@@ -50,18 +50,6 @@ export const HostSection: React.FC = () => {
                 recommendedSize="800 × 1000 px"
                 overlayBadge="Ведущая · Blue White"
                 className="w-full min-h-[460px]"
-              />
-            </div>
-
-            {/* Video Intro Placeholder */}
-            <div className="rounded-2xl overflow-hidden border border-[#1E3A5F]">
-              <MediaPlaceholder
-                type="video"
-                aspectRatio="16:9"
-                title="Видео-приветствие Алины Лисиной"
-                description="Короткое 60-секундное видеообращение к участникам завтрака в Дубае"
-                recommendedSize="1920 × 1080 px (Горизонтальное видео)"
-                className="w-full min-h-[160px]"
               />
             </div>
 
@@ -145,37 +133,6 @@ export const HostSection: React.FC = () => {
 
           </div>
 
-        </div>
-
-        {/* Global Hubs Ticker Strip running full-width */}
-        <div className="pt-10 border-t border-[#1E3A5F]">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-6">
-            <div className="text-xs uppercase tracking-widest text-slate-400 font-bold flex items-center gap-2">
-              <Globe className="w-4 h-4 text-[#E06D2B]" />
-              <span>География мероприятий и клиентов Blue White:</span>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-            {HUBS.map((hub, idx) => (
-              <div
-                key={idx}
-                className="p-4 bg-[#0D213F] rounded-2xl border border-[#1E3A5F] flex flex-col justify-between group hover:border-[#E06D2B] transition-colors"
-              >
-                <div>
-                  <div className="text-base font-bold text-white group-hover:text-[#E06D2B] transition-colors">
-                    {hub.city}
-                  </div>
-                  <div className="text-[11px] font-mono text-slate-400">
-                    {hub.country}
-                  </div>
-                </div>
-                <div className="text-[10px] text-slate-400 mt-2 font-medium">
-                  {hub.role}
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
 
       </div>

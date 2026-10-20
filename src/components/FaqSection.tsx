@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { ChevronDown, Plus, Minus, HelpCircle } from 'lucide-react';
-import { AnimatedGridLines } from './AnimatedGridLines.tsx';
 
 const FAQ_ITEMS = [
   {
@@ -38,7 +37,6 @@ export const FaqSection: React.FC = () => {
 
   return (
     <section id="faq" className="relative w-full py-24 sm:py-32 bg-[#F8F6F0] text-[#0A192F] border-b border-[#E2DDD3] overflow-hidden">
-      <AnimatedGridLines />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Header */}

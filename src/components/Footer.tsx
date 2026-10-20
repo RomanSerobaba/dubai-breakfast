@@ -30,9 +30,6 @@ export const Footer: React.FC = () => {
             </div>
             <ul className="space-y-2.5 text-slate-300">
               <li>
-                <a href="#about" className="hover:text-white transition-colors">О встрече и формате</a>
-              </li>
-              <li>
                 <a href="#speaker" className="hover:text-white transition-colors">Ведущая — Алина Лисина</a>
               </li>
               <li>

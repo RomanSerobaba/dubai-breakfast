@@ -1,7 +1,6 @@
 import React from 'react';
 import { ArrowUpRight, MapPin, Calendar, Clock, Coffee, CheckCircle2 } from 'lucide-react';
 import { MediaPlaceholder } from './MediaPlaceholder.tsx';
-import { AnimatedGridLines } from './AnimatedGridLines.tsx';
 
 interface ProgramAndOutcomesProps {
   onSelectPricing: () => void;
@@ -61,7 +60,6 @@ const OUTCOMES = [
 export const ProgramAndOutcomes: React.FC<ProgramAndOutcomesProps> = ({ onSelectPricing }) => {
   return (
     <section id="program" className="relative w-full py-24 sm:py-32 bg-[#F8F6F0] text-[#0A192F] border-b border-[#E2DDD3] overflow-hidden">
-      <AnimatedGridLines />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Header */}

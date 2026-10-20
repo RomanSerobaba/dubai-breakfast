@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { CheckCircle2, ArrowUpRight, ShieldCheck, Send } from 'lucide-react';
 import { validateApplicationForm, ApplicationFormData, ValidationErrors } from '../utils/validation.ts';
 import { TICKET_PACKAGES } from '../utils/pricing.ts';
-import { AnimatedGridLines } from './AnimatedGridLines.tsx';
 
 interface ApplicationFormSectionProps {
   selectedPackageId: string;
@@ -87,7 +86,6 @@ export const ApplicationFormSection: React.FC<ApplicationFormSectionProps> = ({
 
   return (
     <section id="application" className="relative w-full py-24 sm:py-32 bg-white text-[#0A192F] border-b border-[#E2DDD3] overflow-hidden">
-      <AnimatedGridLines />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <div className="max-w-3xl mx-auto">
         

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Building2, Briefcase, Scale, GraduationCap, CheckCircle2, Shield, Users, Target } from 'lucide-react';
-import { AnimatedGridLines } from './AnimatedGridLines.tsx';
 
 const NICHES = [
   {
@@ -54,7 +53,6 @@ const SELECTION_CRITERIA = [
 export const AudienceSection: React.FC = () => {
   return (
     <section id="audience" className="relative w-full py-24 sm:py-32 bg-[#F8F6F0] text-[#0A192F] border-b border-[#E2DDD3] overflow-hidden">
-      <AnimatedGridLines />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Section Header */}

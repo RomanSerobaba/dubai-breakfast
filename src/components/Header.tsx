@@ -22,9 +22,6 @@ export const Header: React.FC<HeaderProps> = ({ onApplyClick }) => {
 
         {/* Center: Navigation Links in a subtle inner pill */}
         <nav className="hidden lg:flex items-center gap-1 bg-white/5 rounded-full p-1 border border-white/5 text-xs font-medium text-slate-300">
-          <a href="#about" className="px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-colors whitespace-nowrap">
-            О встрече
-          </a>
           <a href="#speaker" className="px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-colors whitespace-nowrap">
             Ведущая
           </a>
