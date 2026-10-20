@@ -1,5 +1,4 @@
 import React from 'react';
-import { MediaPlaceholder } from './MediaPlaceholder.tsx';
 
 export const ParticipantsVideoSection: React.FC = () => {
   return (
@@ -28,16 +27,16 @@ export const ParticipantsVideoSection: React.FC = () => {
             </p>
           </div>
 
-          {/* Right Column: Video Placeholder */}
-          <div className="lg:col-span-5">
-            <div className="relative rounded-3xl overflow-hidden shadow-lg border border-[#E5E0D5]">
-              <MediaPlaceholder
-                type="video"
-                title="Атмосфера встреч и участники"
-                description="Видео-презентация закрытого бизнес-завтрака в Дубае"
-                recommendedSize="1920 × 1080 px (Видеоролик)"
-                aspectRatio="16:9"
-                className="w-full min-h-[360px] sm:min-h-[420px]"
+          {/* Right Column: Square Video */}
+          <div className="lg:col-span-5 flex justify-center">
+            <div className="relative w-full max-w-[440px] aspect-square rounded-3xl overflow-hidden shadow-lg border border-[#E5E0D5] bg-black">
+              <video
+                src="/assets/aistudio/networking-hero_bf4473bb.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full h-full object-cover"
               />
             </div>
           </div>

@@ -41,22 +41,22 @@ const ELEMENTS = [
 
 export const SystemElementsSection: React.FC = () => {
   return (
-    <section className="relative w-full py-24 sm:py-32 bg-[#F8F6F0] text-[#0A192F] border-b border-[#E2DDD3] overflow-hidden">
+    <section className="relative w-full py-12 sm:py-32 bg-[#F8F6F0] text-[#0A192F] border-b border-[#E2DDD3] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Header */}
-        <div className="max-w-4xl mx-auto text-center mb-16 sm:mb-20">
-          <div className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-[#E06D2B] font-bold mb-4">
+        <div className="max-w-4xl mx-auto text-center mb-10 sm:mb-20">
+          <div className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-[#E06D2B] font-bold mb-3 sm:mb-4">
             <span className="w-1.5 h-1.5 rounded-full bg-[#E06D2B]" />
             <span>Методология Blue White</span>
           </div>
-          <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-[#0A192F] mb-6 leading-tight">
+          <h2 className="text-2xl sm:text-5xl font-bold tracking-tight text-[#0A192F] mb-4 sm:mb-6 leading-tight">
             От отдельных заявок — к системе продаж с высоким чеком
           </h2>
-          <p className="text-base sm:text-lg text-slate-700 leading-relaxed mb-6">
+          <p className="text-sm sm:text-lg text-slate-700 leading-relaxed mb-4 sm:mb-6">
             Как найти аудиторию, у которой есть потребность и бюджет? Как сформировать предложение, которое не сводится к сравнению цен? Как связать маркетинг и продажи, чтобы интерес превращался в предметные переговоры? Как внедрять AI в маркетинг и продажи, не теряя концепции «люди покупают у людей».
           </p>
-          <div className="inline-block px-6 py-2.5 rounded-full bg-[#0A192F] text-white text-xs sm:text-sm font-semibold tracking-wide">
+          <div className="inline-block px-5 sm:px-6 py-2 sm:py-2.5 rounded-full bg-[#0A192F] text-white text-xs sm:text-sm font-semibold tracking-wide">
             На бизнес-завтраке рассмотрим пять ключевых элементов.
           </div>
         </div>

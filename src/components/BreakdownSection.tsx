@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowUpRight, CheckCircle2, HelpCircle } from 'lucide-react';
+import { AnimatedGridLines } from './AnimatedGridLines.tsx';
 
 interface BreakdownSectionProps {
   onApplyBreakdown: () => void;
@@ -24,6 +25,7 @@ const EXAMPLES = [
 export const BreakdownSection: React.FC<BreakdownSectionProps> = ({ onApplyBreakdown }) => {
   return (
     <section id="breakdown" className="w-full py-24 sm:py-32 bg-[#0D213F] text-white border-b border-[#1E3A5F]/60 relative overflow-hidden">
+      <AnimatedGridLines className="z-10" />
       
       {/* Background ambient light */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[900px] h-[500px] bg-[radial-gradient(ellipse_at_center,rgba(224,109,43,0.1),transparent_70%)] pointer-events-none" />
@@ -112,7 +114,7 @@ export const BreakdownSection: React.FC<BreakdownSectionProps> = ({ onApplyBreak
         </div>
 
         {/* Bottom CTA Box Stretched Full Width */}
-        <div className="p-8 sm:p-10 bg-gradient-to-br from-[#E06D2B]/20 to-[#0A192F] rounded-3xl border border-[#E06D2B]/30 flex flex-col md:flex-row items-center justify-between gap-8 shadow-xl">
+        <div className="p-5 sm:p-10 bg-gradient-to-br from-[#E06D2B]/20 to-[#0A192F] rounded-3xl border border-[#E06D2B]/30 flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 shadow-xl">
           <div className="text-center md:text-left">
             <span className="text-xs font-mono uppercase tracking-widest text-[#E06D2B] font-bold mb-2 block">
               Осталось 3 места
@@ -127,10 +129,10 @@ export const BreakdownSection: React.FC<BreakdownSectionProps> = ({ onApplyBreak
           <button
             onClick={onApplyBreakdown}
             type="button"
-            className="inline-flex items-center justify-center gap-2.5 px-9 py-4 text-sm sm:text-base font-bold text-white bg-[#E06D2B] hover:bg-[#C65A1B] active:bg-[#B34E14] rounded-full transition-all duration-150 cursor-pointer shadow-lg hover:-translate-y-0.5 whitespace-nowrap shrink-0"
+            className="w-full md:w-auto inline-flex items-center justify-center gap-2 sm:gap-2.5 px-4 sm:px-9 py-3.5 sm:py-4 text-xs sm:text-sm md:text-base font-bold text-white animated-gradient-button rounded-full cursor-pointer shadow-lg text-center shrink-0"
           >
             <span>Подать заявку на разбор бизнеса</span>
-            <ArrowUpRight className="w-5 h-5" />
+            <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
           </button>
         </div>
 

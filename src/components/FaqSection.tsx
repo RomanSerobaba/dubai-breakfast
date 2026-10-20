@@ -108,7 +108,7 @@ export const FaqSection: React.FC = () => {
             </div>
           </div>
           <a
-            href="https://wa.me/971500000000"
+            href="https://wa.me/37129785825"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 text-xs font-semibold text-white bg-[#0A192F] hover:bg-[#1E3A5F] rounded-full transition-colors whitespace-nowrap shrink-0"

@@ -49,11 +49,11 @@ const PAIN_POINTS = [
 
 export const ProblemSection: React.FC<ProblemSectionProps> = ({ onLearnMoreClick }) => {
   return (
-    <section id="problems" className="relative w-full py-24 sm:py-32 bg-[#F8F6F0] text-[#0A192F] border-b border-[#E2DDD3] overflow-hidden">
+    <section id="problems" className="relative w-full py-12 sm:py-32 bg-[#F8F6F0] text-[#0A192F] border-b border-[#E2DDD3] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Header: Title + Explanation */}
-        <div className="max-w-4xl mb-16">
+        <div className="max-w-4xl mb-8 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#0A192F] mb-6 leading-tight">
             Сильный продукт и высокий чек ещё не гарантируют стабильных продаж
           </h2>
@@ -63,8 +63,8 @@ export const ProblemSection: React.FC<ProblemSectionProps> = ({ onLearnMoreClick
         </div>
 
         {/* 7 Pain Points Grid */}
-        <div className="mb-20">
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10 pb-4 border-b border-[#E2DDD3]">
+        <div>
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6 sm:mb-10 pb-4 border-b border-[#E2DDD3]">
             <h3 className="text-2xl sm:text-3xl font-bold text-[#0A192F]">
               Узнаёте свою ситуацию?
             </h3>

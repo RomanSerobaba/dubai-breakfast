@@ -37,7 +37,6 @@ export default function App() {
 
   return (
     <div className="w-full min-h-screen bg-[#0A192F] text-[#0A192F] selection:bg-[#E06D2B] selection:text-white overflow-x-hidden relative">
-      <AnimatedGridLines />
       
       {/* 0. Floating Pill Top Navigation */}
       <Header onApplyClick={() => scrollToApplication()} />
@@ -47,7 +46,7 @@ export default function App() {
         {/* Первый экран: HIGH-TICKET GROWTH BREAKFAST DUBAI (Full-width background, menu-width content) */}
         <Hero
           onApplyParticipant={() => scrollToApplication('participant_single')}
-          onApplyBreakdown={() => scrollToApplication('breakdown_single')}
+          onApplyBreakdown={scrollToPricing}
         />
 
         {/* Блок 1: Три главные проблемы аудитории и содержание работы (Full-width background, menu-width content) */}
@@ -64,11 +63,11 @@ export default function App() {
         {/* Блок: За одним столом — люди, принимающие решения */}
         <ParticipantsVideoSection />
 
-        {/* Блок 3: Кто проводит: Алина Лисина, Blue White и доказательство экспертизы (Full-width background, menu-width content) */}
-        <HostSection />
-
-        {/* Блок 5: Кто участвует и как работает отбор (Full-width background, menu-width content) */}
+        {/* Блок: Для кого эта встреча */}
         <AudienceSection />
+
+        {/* Блок 3: Кто проводит: Алина Лисиная, Blue White и доказательство экспертизы (Full-width background, menu-width content) */}
+        <HostSection />
 
         {/* Блок 6: Краткая программа, дата и площадка + результаты (Full-width background, menu-width content) */}
         <ProgramAndOutcomes onSelectPricing={scrollToPricing} />

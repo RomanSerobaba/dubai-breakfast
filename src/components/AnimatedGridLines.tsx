@@ -6,13 +6,12 @@ interface AnimatedGridLinesProps {
 
 /**
  * Three vertical semi-transparent pulsing and dropping grid lines
- * rendered fixed across the entire viewport so they run continuously
- * across all sections without interruption.
+ * rendered inside dark-themed sections.
  */
 export const AnimatedGridLines: React.FC<AnimatedGridLinesProps> = ({ className = '' }) => {
   return (
     <div
-      className={`animated-grid-lines fixed inset-0 w-full h-full pointer-events-none overflow-hidden z-10 ${className}`}
+      className={`animated-grid-lines absolute inset-0 w-full h-full pointer-events-none overflow-hidden z-0 ${className}`}
       aria-hidden="true"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-full relative">
